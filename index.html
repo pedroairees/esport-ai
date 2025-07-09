@@ -20,24 +20,26 @@
                 <h2>Assistente de Meta</h2>
                 <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
 
-                <form>
-                    <input type="password" placeholder="Informe a API KEY do Gemini" required/>
-                    <select>
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required/>
+                    <select id="gameSelect">
                         <option value="">Selecione uma opção</option>
                         <option value="valorant">Valorant</option>
                         <option value="lol">League of Legends</option>
                         <option value="tft">Teamfight Tactics - TFT</option>
                     </select>
-                    <input type="text" placeholder="Melhor build para ADC..."/>
-                    <button>Perguntar</button>
+                    <input id="questionInput" type="text" placeholder="Melhor build para ADC..."/>
+                    <button id="askButton">Perguntar</button>
                 </form>
                 
-                <div id="idResponse">
+                <div id="aiResponse">
                     <div class="response-content"></div>
                 </div>
             </div>
 
-        </section>
+        </sectio>
     </main>
+
+    <script src="./script.js" defer></script>
 </body>
 </html>
