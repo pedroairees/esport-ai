@@ -114,4 +114,26 @@ button {
         transform: translateY(-2px);
         cursor: pointer;
     }
+
+    &:disabled {
+        transition: initial;
+        transform: initial;
+        box-shadow: initial;
+        --webkit-box-shadow: initial;
+        cursor: not-allowed;
+        color: black;
+    }
+}
+
+.loading {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+        transform: translateY(-2px);
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 13px 11px 15px 5px rgba(0,0,0,0.71); 
+        box-shadow: 0px 10px 13px -7px #000000, 13px 11px 15px 5px rgba(0,0,0,0.71);
+    }
 }
