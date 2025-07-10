@@ -125,6 +125,21 @@ button {
     }
 }
 
+#aiResponse {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem 2rem;
+    border-left: 4px solid #43E7AD;
+
+    & ul {
+        padding-left: 1.5rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
 .loading {
     animation: pulse 1s infinite;
 }

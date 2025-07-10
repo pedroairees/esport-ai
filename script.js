@@ -86,6 +86,7 @@ form.addEventListener('submit', async (event) => {
     try {
         const text = await perguntarAI(question, game, apiKey)
         aiResponse.querySelector('.response-content').innerHTML = markdownToHTML(text)
+        aiResponse.classList.remove('hidden')
     }catch(error) {
         console.log('Erro: ', error)
     }finally {
